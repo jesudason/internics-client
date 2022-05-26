@@ -1,0 +1,59 @@
+@import "../variables.scss";
+
+.Map {
+  margin: 24px 0;
+
+  .leaflet-container {
+    height: 250px;
+    width: 100%;
+  }
+
+  .leaflet-popup-pane {
+    font-size: 13px;
+
+    p,
+    span {
+      padding: 6px 0;
+      margin: 0;
+    }
+    .popup__content {
+      display: block;
+
+      &--icon {
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .Map {
+    margin: 32px 0;
+
+    .leaflet-container {
+      height: 350px;
+    }
+
+    .leaflet-popup-pane {
+      font-size: 14px;
+
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .Map {
+    margin: 48px 0;
+
+    .leaflet-container {
+      height: 450px;
+    }
+
+    .leaflet-popup-pane {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "../variables.scss";
+
+.SocialMedia {
+  margin-left: 24px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      padding: 0 0 0 12px;
+
+      a {
+        font-size: 24px;
+
+        &:after {
+          content: none;
+          border-bottom: none;
+        }
+
+        &:hover {
+          color: #fff;
+          transform: scale(1.04);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .SocialMedia {
+    margin-left: 32px;
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .SocialMedia {
+    margin-left: 48px;
+
+    ul li {
+      padding: 0 0 0 24px;
+    }
+  }
+}
